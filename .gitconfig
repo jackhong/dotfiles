@@ -1,6 +1,6 @@
 [user]
-  name = Richard Heycock
-  email = rgh@roughage.com.au
+  name = Jack C Hong
+  email = jhong@nicta.com.au
 
 [color]
   branch = auto
@@ -9,9 +9,10 @@
   ui = auto
 
 [alias]
-  stat = status
+  s    = status
   c    = commit
   co   = checkout
   root = !pwd
   flog = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   slog = log --pretty=oneline
+  rlog = log --graph --stat

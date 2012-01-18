@@ -20,3 +20,7 @@ if [ "$PS1" ] ; then
 
   [ "$KBD_LAYOUT" = 'colemak' ] && source_if_exists $dotfiles/zsh/colemak
 fi
+
+export RUBYLIB=$HOME/omf/omf-web/ruby/:$HOME/omf/omf-oml/ruby/:$HOME/omf/omf-common/ruby/
+
+[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
