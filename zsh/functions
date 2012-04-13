@@ -12,6 +12,7 @@ function gem-root { gem env gemdir 2> /dev/null }
 function cdr { cd ~/dev/rails/$1 }
 function cdl { cd ~/dev/ruby/$1 }
 function cdg { cd $(gem-root)/gems/$1 }
+function cdo { cd ~/nicta/omf/omf_$1 }
 
 function gr {
   local git_root

@@ -16,3 +16,4 @@
   flog = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
   slog = log --pretty=oneline
   rlog = log --graph --stat
+  pull = pull --rebase

@@ -12,13 +12,13 @@ xterm*scrollTtyOutput:      false
 xterm*scrollKey:            true
 xterm*loginShell:           true
 xterm*cursorBlink:          true
-xterm*font:                 -efont-fixed-medium-r-normal--12-*-*-*-c-*-iso10646-1
+xterm*font:                 -efont-fixed-medium-r-normal--14-*-*-*-c-*-iso10646-1
 xterm*highlightSelection:   true
 xterm*colorBDMode:          on
 xterm*colorBD:              SlateBlue
 xterm*colorULMode:          on
 xterm*colorUL:              red3
-xterm*underLine:            off
+xterm*underLine:            on
 xterm*dynamicColors:        on
 
 ! These map to the standard terminal colour changing codes, eg. echo '\e[2;38mbob'

@@ -22,3 +22,6 @@
 [submodule ".vim/gundo"]
 	path = .vim/gundo
 	url = http://github.com/sjl/gundo.vim.git
+[submodule ".vim/ack"]
+	path = .vim/ack
+	url = https://github.com/mileszs/ack.vim

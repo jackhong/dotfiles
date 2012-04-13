@@ -22,6 +22,7 @@ set runtimepath+=/home/jack/.vim/surround
 set runtimepath+=/home/jack/.vim/speeddating
 set runtimepath+=/home/jack/.vim/solarized
 set runtimepath+=/home/jack/.vim/utl
+set runtimepath+=/home/jack/.vim/ack
 
 source /home/jack/.vim/udev.vim
 source /home/jack/.vim/autotag.vim
@@ -54,7 +55,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 let g:solarized_termcolors=256
 let g:solarized_bold=0
-let g:solarized_underline=0
+let g:solarized_underline=1
 let g:solarized_termtrans=1
 
 syntax enable
@@ -141,3 +142,10 @@ if has("gui_running")
 
   colorscheme slate
 endif
+
+let g:ackprg="ack-grep -H --nocolor --nogroup --column"
+
+call pathogen#infect()
+
+" EJS highlight
+au BufNewFile,BufRead *.ejs set filetype=html
