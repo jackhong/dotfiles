@@ -5,18 +5,16 @@ usermodmap=$HOME/.Xmodmap
 
 if [ -f "$userdefaults" ]; then
 
-    if [ -x /usr/bin/cpp ] ; then
-        xrdb -merge "$userdefaults"
-    else
-        xrdb -nocpp -merge "$userdefaults"
-    fi
+  if [ -x /usr/bin/cpp ] ; then
+    xrdb -merge "$userdefaults"
+  else
+    xrdb -nocpp -merge "$userdefaults"
+  fi
 
 fi
 
-setxkbmap -option terminate:ctrl_alt_bksp
-
 if [ -f "$usermodmap" ]; then
-    xmodmap "$usermodmap"
+  xmodmap "$usermodmap"
 fi
 
 # start some nice programs
